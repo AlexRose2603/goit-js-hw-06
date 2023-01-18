@@ -25,7 +25,7 @@ const ulElem = document.querySelector(".gallery");
 console.log(ulElem);
 const markup = images
   .map((obj) => {
-    return `<li><img scr="${obj.url}" alt = "${obj.alt}"></img></li>`;
+    return `<li><img src="${obj.url}" alt = "${obj.alt}"></img></li>`;
   })
   .join("");
 ulElem.insertAdjacentHTML("beforeend", markup);

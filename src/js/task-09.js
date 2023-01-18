@@ -16,5 +16,6 @@ console.log(bodyElem);
 
 buttonElem.addEventListener("click", () => {
   bodyElem.style.backgroundColor = getRandomHexColor();
-  colorName.textContent = getRandomHexColor();
+  colorName.textContent = bodyElem.style.backgroundColor;
+  console.log(bodyElem);
 });

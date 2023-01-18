@@ -19,8 +19,8 @@ function onFormSubmit(event) {
     elements: { email, password },
   } = event.currentTarget;
 
-  if (email.value === "" || password.value === "") {
-    alert("Є незаповнені поля");
+  if (email.value.trim() === "" || password.value.trim() === "") {
+    return alert("Є незаповнені поля");
   }
 
   // const formData = new FormData(event.currentTarget);

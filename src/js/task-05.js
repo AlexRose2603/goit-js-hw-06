@@ -7,8 +7,11 @@ const inputEl = document.querySelector("#name-input");
 const addedNameEl = document.querySelector("#name-output");
 
 inputEl.addEventListener("input", onInputChange);
-function onInputChange(event) {
-  console.log(event.currentTarget.value);
 
-  addedNameEl.textContent = event.currentTarget.value;
+function onInputChange(event) {
+  if (event.currentTarget.value.trim() === "") {
+    addedNameEl.textContent;
+  } else {
+    addedNameEl.textContent = event.currentTarget.value.trim();
+  }
 }

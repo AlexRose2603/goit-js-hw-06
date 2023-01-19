@@ -9,8 +9,8 @@ const addedNameEl = document.querySelector("#name-output");
 inputEl.addEventListener("input", onInputChange);
 
 function onInputChange(event) {
-  if (event.currentTarget.value.trim() === "") {
-    addedNameEl.textContent;
+  if (event.currentTarget.value.trim() == "") {
+    addedNameEl.textContent = "Anonymous";
   } else {
     addedNameEl.textContent = event.currentTarget.value.trim();
   }
